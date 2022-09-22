@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ihor Chyzh](https://up.htmlacademy.ru/htmlcss/35/user/774119).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 
