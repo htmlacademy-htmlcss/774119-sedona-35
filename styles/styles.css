@@ -181,7 +181,7 @@ body {
 .reset_button {
     padding-left: 50px;
     padding-right: 50px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
 }
 .result_title {
     font-weight: 700;
