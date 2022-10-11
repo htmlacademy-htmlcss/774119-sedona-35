@@ -164,16 +164,19 @@ body {
     text-decoration: none;
     color: #FFFFFF;
 }
+.catalog_filter {
+    color: #FFFFFF;
+}
 .hotel_filter_title {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #FFFFFF;
+    
 }
 .control_input {
     font-size: 18px;
     line-height: 23px;
-    color: #FFFFFF;
+    
 }
 .submit_button {
     background-color: #82B3D3;
