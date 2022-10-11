@@ -43,6 +43,9 @@ body {
 .button_main {
     background-color: #756157;   
 }
+.hero {
+    color: #FFFFFF;
+}
 .hero_image {
     width: 1200px;
     background-color: #333333;
@@ -54,7 +57,6 @@ body {
     display: block;
     margin: 0 auto;
 }
-
 .advantages_attention {
     font-weight: 700;
     font-size: 30px;
