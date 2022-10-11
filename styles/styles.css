@@ -43,15 +43,13 @@ body {
 .button_main {
     background-color: #756157;   
 }
-.hero {
-    color: #FFFFFF;
-}
 .hero_image {
     width: 1200px;
     background-color: #333333;
     background-image: url("../images/hero_background.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    color: #FFFFFF;
 }
 .hero_welcome_image {
     display: block;
@@ -143,7 +141,7 @@ body {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
-    color: #FFFFFF;
+    
 }
 .filters {
     width: 1200px;
@@ -151,32 +149,26 @@ body {
     background-color: #333333;
     background-position: center;
     background-repeat: no-repeat;
+    color: #FFFFFF;
 }
 .inner_header_title {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
-    color: #FFFFFF;
 }
 .breadcrumbs_link {
     font-size: 16px;
     line-height: 21px;
     text-decoration: none;
-    color: #FFFFFF;
-}
-.catalog_filter {
-    color: #FFFFFF;
 }
 .hotel_filter_title {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    
 }
 .control_input {
     font-size: 18px;
     line-height: 23px;
-    
 }
 .submit_button {
     background-color: #82B3D3;
