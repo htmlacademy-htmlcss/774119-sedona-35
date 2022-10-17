@@ -139,6 +139,10 @@ body {
     color: #333333;
 }
 .advantages_title {
+    margin: 0 auto;
+    margin-bottom: 62px;
+    padding: 0;
+    max-width: 175px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -146,6 +150,9 @@ body {
     text-transform: uppercase;
 }
 .advantages_description {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 230px;
     color: #333333;
     text-align: center;
 }
@@ -159,12 +166,28 @@ body {
     list-style: none;
 }
 .advantages_item {
+    padding-top: 103px;
     width: 400px;
 }
+.advantages_image {
+    display: block;
+}
 .advantages_item:nth-child(4n+1) {
+    display: flex;
+    padding: 0;
     background-color: #82B3D3;
     color: #FFFFFF;
     width: 1200px;
+}
+.advantages_description_wrap {
+    flex-grow: 1;
+    padding-top: 103px;
+}
+.advantages_only_text>.advantages_description {
+    margin-bottom: 121px;
+}
+.advantages_with_icons>.advantages_description {
+    margin-bottom: 81px;
 }
 .search_hotels {
     padding-top: 96px;
@@ -251,10 +274,11 @@ body {
     list-style-type: none;
 }
 .footer_social_item {
+    box-sizing: border-box;
      background-color: #333333;
      padding: 13px 12px;
-     min-width: 48px;
-     min-height: 40px;
+     width: 48px;
+     height: 40px;
 }
 .phone_number {
     font-size: 40px;
