@@ -82,6 +82,7 @@ body {
     color: #000000;
 }
 .button_small {
+    font-family: "PT Sans";
     display: inline-block;
     border-width: 0;
     border-radius: 4px;
@@ -90,6 +91,7 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     padding: 8px 34px;
+    margin: 0;
     color: #FFFFFF; 
 }
 .button_main {
@@ -210,6 +212,7 @@ body {
     line-height: 26px;
 }
 .button_big {
+    font-family: "PT Sans";
     display: inline-block;
     border-width: 0px;
     border-radius: 0px 4px 4px 0px;
@@ -233,12 +236,11 @@ body {
     background-color: #333333;
     background-position: center;
     background-repeat: no-repeat;
+    padding-top: 96px;
     color: #FFFFFF;
 }
 .newsletters {
     text-align: center;
-    padding-top: 96px;
-
 }
 .newsletters_title {
     margin: 0;
@@ -359,11 +361,12 @@ body {
     background-color: #82B3D3;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 32px;
 }
 .reset_button {
-    padding-left: 50px;
-    padding-right: 50px;
     background-color: transparent;
+    padding-left: 57px;
+    padding-right: 58px;
 }
 .hotel_result {
     box-sizing: border-box;
@@ -410,14 +413,34 @@ body {
     margin-bottom: 80px;
     padding: 20px;
 }
+.hotel_card {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 16px;
+}
 .hotel_card_link {
     text-decoration: none;
+    grid-column-end: span 2;
+}
+.hotel_card_image {
+    display: block;
+    margin-bottom: 16px;
 }
 .hotel_card_title {
     font-weight: 700;
+    margin: 0;
+    padding: 0;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+}
+.rate {
+    display: flex;
+    justify-content: space-between;
+    grid-column-end: span 2;
+    margin: 0;  
 }
 .button_more {
     padding-left: 26px;
@@ -435,10 +458,15 @@ body {
     padding-right: 18px;
     background-color: #7DB54F;
 }
+.rate_star {
+    margin: 0;
+}
 .rate_value {
+    margin: 0;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 .pagination {
     display: flex;
