@@ -63,7 +63,7 @@ body {
     margin-left: auto;
     margin-right: 70px;
     justify-content: end;
-    align-items: flex-start;
+    align-items: center;
 }
 .navigation_user .navigation_link {
     min-width: 20px;
@@ -104,7 +104,6 @@ body {
     flex-grow: 1;
 }
 .hero_image {
-    position: relative;
     width: 1200px;
     background-color: #333333;
     background-image: url("../images/hero_background.jpg");
@@ -118,9 +117,7 @@ body {
     margin: 0 auto;
     margin-bottom: 25px;
 }
-.hero_divider {
-    display: block;
-}
+
 .advantages {
     padding-top: 69px;
 }
