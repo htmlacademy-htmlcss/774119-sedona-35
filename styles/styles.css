@@ -395,17 +395,17 @@ body {
     height: 40px;
     
 }
-.social_footer_icon {
+.social_link {
     color: #83B3D3;
 }
-.social_footer_icon:hover {
-    fill: #68A2CA;
+.social_link:hover {
+    color: #68A2CA;
 }
-.social_footer_icon:focus {
-    fill: #68A2CA;
+.social_link:focus {
+    color: #68A2CA;
 }
-.social_footer_icon:active {
-    fill: rgba(104, 162, 202, 0.3);
+.social_link:active {
+    color: rgba(104, 162, 202, 0.3);
 }
 .footer_link {
     color:#000000;
