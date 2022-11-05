@@ -119,6 +119,9 @@ body {
 .navigation_link:focus {
     color: #756157;
 }
+.navigation_link:focus-visible {
+    color: #756157;
+}
 .navigation_link:active {
     color: #756157;
     opacity: 0.3;
@@ -145,6 +148,9 @@ body {
     background-color: #615048;     
 }
 .button_dark:focus {
+    background-color: #615048;    
+}
+.button_dark:focus-visible {
     background-color: #615048;    
 }
 .button_dark:active {
@@ -193,6 +199,9 @@ body {
     margin: 0 auto;
     margin-bottom: 25px;
     text-transform: uppercase;
+}
+.advantages_attention span {
+    display: block;
 }
 .advantages_invitation {
     margin: 0;
@@ -268,8 +277,51 @@ body {
 }
 .advantages_description_wrap {
     flex-grow: 1;
-    padding-top: 103px;
+    padding-top: 92px;
 }
+.advantages_with_icons {
+    padding-top: 182px;
+}
+.advantages_item:nth-child(6) .advantages_title {
+    position: relative;
+ }
+ .advantages_item:nth-child(6) .advantages_title::before {
+     position: absolute;
+     bottom: 58px;
+     left: 50%;
+     transform: translateX(-38px);
+     background-image: url("../images/advantages/house.svg");
+     height: 72px;
+     width: 75px;
+     content: "";
+ }
+.advantages_item:nth-child(7) .advantages_title {
+    position: relative;
+ }
+ .advantages_item:nth-child(7) .advantages_title::before {
+     position: absolute;
+     bottom: 58px;
+     left: 50%;
+     transform: translateX(-38px);
+     background-image: url("../images/advantages/food.svg");
+     height: 72px;
+     width: 75px;
+     content: "";
+ }
+ .advantages_item:nth-child(8) .advantages_title {
+    position: relative;
+ }
+ .advantages_item:nth-child(8) .advantages_title::before {
+     position: absolute;
+     bottom: 58px;
+     left: 50%;
+     transform: translateX(-38px);
+     background-image: url("../images/advantages/gift.svg");
+     height: 72px;
+     width: 75px;
+     content: "";
+ }
+
 .advantages_only_text>.advantages_description {
     margin-bottom: 121px;
 }
@@ -373,6 +425,9 @@ body {
 .button_light:focus {
     background-color: #68A2CA; 
 }
+.button_light:focus-visible {
+    background-color: #68A2CA; 
+}
 .button_light:active {
     background-color: #82B3D3;
     color: rgba(255, 255, 255, 0.3); 
@@ -396,17 +451,32 @@ body {
 }
 .footer_social_item {
     display: block;
-    width: 48px;
-    height: 40px;
+    box-sizing: border-box;
     
 }
 .social_link {
+    display: block;
+    box-sizing: border-box;
+    width: 48px;
+    height: 40px;
     color: #83B3D3;
+}
+.vkontakte_link{
+    padding: 13px 11.6px;
+}
+.telegram_link{
+  padding: 12px 14.6px;
+}
+.youtube_link{
+    padding: 11.5px 12.6px;
 }
 .social_link:hover {
     color: #68A2CA;
 }
 .social_link:focus {
+    color: #68A2CA;
+}
+.social_link:focus-visible {
     color: #68A2CA;
 }
 .social_link:active {
@@ -420,6 +490,9 @@ body {
     color: #756157;
  }
  .footer_link:focus {
+    color: #756157;
+}
+ .footer_link:focus-visible {
      color: #756157;
  }
  .footer_link:active {
@@ -445,7 +518,8 @@ body {
     margin-left: auto;
 }
 .htmlacademy_link {
-  padding-left: 10px;  
+    display: block;
+    padding-left: 10px;  
 }
 .catalog_container {
     display: flex;
@@ -496,6 +570,9 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 .breadcrumbs_link:focus {
+    color: #FFFFFF;
+}
+.breadcrumbs_link:focus-visible {
     color: #FFFFFF;
 }
 .breadcrumbs_link:active {
@@ -560,6 +637,11 @@ body {
     outline: 3px solid #83B3D3;
     border-radius: 4px;
 }
+.reset_button:focus-visible {
+    color: #FFFFFF;
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+}
 .reset_button:active {
     color: rgba(255, 255, 255, 0.3);
 
@@ -605,6 +687,10 @@ body {
     outline: none;
     border: 2px solid #68A2CA;
 }
+.select_control:focus-visible {
+    outline: none;
+    border: 2px solid #68A2CA;
+}
 .select_control:active {
     border: 2px solid #3F5E72;
 }
@@ -634,6 +720,10 @@ body {
     border: 2px solid #000000;
 }
 .hotel_view:focus {
+    outline: none;
+    border: 2px solid #68A2CA;
+}
+.hotel_view:focus-visible {
     outline: none;
     border: 2px solid #68A2CA;
 }
@@ -711,6 +801,9 @@ body {
 .added_favorites:focus {
     background-color: #6C9E42;
 }
+.added_favorites:focus-visible {
+    background-color: #6C9E42;
+}
 .added_favorites:active {
     background-color: #7DB54F;
     color: rgba(255, 255, 255, 0.3);
@@ -777,6 +870,9 @@ body {
     background-color: #68A2CA;
 }
 :not(.active_page).pagination_link:focus {
+    background-color: #68A2CA;
+}
+:not(.active_page).pagination_link:focus-visible {
     background-color: #68A2CA;
 }
 :not(.active_page).pagination_link:active {
