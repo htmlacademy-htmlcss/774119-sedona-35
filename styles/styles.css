@@ -43,19 +43,21 @@ body {
     text-align: center;
 }
 .navigation {
-    position: relative;
     display: flex;
-    padding-left: 238px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
-.header_logo {
-    position: absolute;
-    top: 0;
-    left: 70px;
+.index_link {
+    margin-right: 30px;
+    height: 64px;
+    z-index: 1;
+}
+.header_logo {  
+    overflow: visible;   
 }
 .navigation_list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 339px;
     margin: 0;
     padding: 0;
@@ -68,25 +70,25 @@ body {
     position: absolute;
     right: 16px;
     left: 16px;
-    bottom: 0;
+    top: calc(50% + 32px);
     height: 2px;
     background-color: #756257;
     content: "";
 }
 .navigation_user {
-    max-width: 268px;
     margin-left: auto;
-    margin-right: 70px;
-    align-items: center;
+    justify-content: flex-end;
 }
 .navigation_user .navigation_link {
     position: relative;
     min-width: 20px;
     min-height: 20px;
+    line-height: 14px;
     padding: 22px 12px;
 }
-.navigation_user .navigation_item:last-child {
-    margin-left: auto;
+.navigation_item .button_small {
+    margin-left: 20px;
+    margin-top: 14px;
 }
 .favorites_number {
     position: absolute;
@@ -143,8 +145,7 @@ body {
     background-color: #615048;     
 }
 .button_dark:focus {
-    background-color: #615048;  
-    outline: none;   
+    background-color: #615048;    
 }
 .button_dark:active {
     background-color:#756157; 
@@ -152,6 +153,10 @@ body {
 }
 .main_container {
     flex-grow: 1;
+}
+.hero_content {
+    padding-left: 70px;
+    padding-right: 70px;
 }
 .hero_image {
     width: 1200px;
@@ -178,19 +183,20 @@ body {
 .advantages {
     padding-top: 69px;
 }
+.advantages_wrapper {
+    margin-bottom: 90px;
+}
 .advantages_attention {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     margin: 0 auto;
     margin-bottom: 25px;
-    max-width: 620px;
     text-transform: uppercase;
 }
 .advantages_invitation {
     margin: 0;
     padding: 0;
-    margin-bottom: 90px;
     font-size: 22px;
     line-height: 26px;
     color: #333333;
@@ -366,7 +372,6 @@ body {
 }
 .button_light:focus {
     background-color: #68A2CA; 
-    outline: none;
 }
 .button_light:active {
     background-color: #82B3D3;
@@ -425,16 +430,22 @@ body {
     margin: 0 auto;
     padding: 12px; 
 }
-
+.contacts {
+    min-width: min-content;
+}
 .phone_number {
+    display: block;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     color: #000000;
 }
-.htmlacademy_link {
-    display: block;
+.partners {
+    margin: 0;
     margin-left: auto;
+}
+.htmlacademy_link {
+  padding-left: 10px;  
 }
 .catalog_container {
     display: flex;
@@ -492,8 +503,20 @@ body {
 }
 .hotel_filter {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+.filter_group_list {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 70px;
+}
+.filter_group_price {
+    display: grid;
+    grid-template-columns: 288px 191px;
+    column-gap: 70px;
+}
+
 .hotel_filter_group {
     border: 0 none;
     margin: 0;
@@ -579,12 +602,11 @@ body {
     border: 2px solid #68A2CA;
 }
 .select_control:focus {
-    outline: 2px solid #68A2CA;
-    border: none;
+    outline: none;
+    border: 2px solid #68A2CA;
 }
 .select_control:active {
     border: 2px solid #3F5E72;
-    outline: none;
 }
 .select_control:disabled {
     border: 2px solid rgba(0, 0, 0, 0.3);   
@@ -612,12 +634,11 @@ body {
     border: 2px solid #000000;
 }
 .hotel_view:focus {
-    outline: 2px solid #68A2CA;
-    border: none;
+    outline: none;
+    border: 2px solid #68A2CA;
 }
 .hotel_view:active {
     border: 2px solid  #000000;
-    outline: none;
 }
 .hotel_view:last-child {
     margin-right: 0;
@@ -664,6 +685,13 @@ body {
     grid-column-end: span 2;
     margin: 0;  
 }
+.card_buttons {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-column-end: span 2;
+    column-gap: 20px;
+}
 .button_more {
     padding-left: 26px;
     padding-right: 26px;
@@ -682,7 +710,6 @@ body {
 }
 .added_favorites:focus {
     background-color: #6C9E42;
-    outline: none;
 }
 .added_favorites:active {
     background-color: #7DB54F;
@@ -767,10 +794,8 @@ body {
 .button_big:disabled {
     background: #E5E5E5;
     color: #FFFFFF;
-    outline: none;
 }
 .button_small:disabled {
     background: #E5E5E5;
     color: #FFFFFF;
-    outline: none;
 }
