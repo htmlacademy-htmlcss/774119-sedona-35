@@ -11,11 +11,11 @@
         
         <nav class="navigation">
           <a  class="index_link" href="index.html" aria-current="page">
-            <img class="header_logo" src="images/logo.svg" alt="логотип города Седона" width="138" height="64">
+            <img class="header_logo" src="images/logo.svg" alt="логотип города Седона" width="140" height="70">
           </a>
           <ul class="navigation_list">
-            <li class="navigation_item">
-              <a class="navigation_link" href="#">Главная</a>
+            <li class="navigation_item active_item">
+              <a class="navigation_link active_link" href="#">Главная</a>
             </li>
             <li class="navigation_item">
               <a class="navigation_link" href="#">О Седоне</a>
@@ -26,13 +26,25 @@
           </ul>
           <ul class="navigation_list navigation_user">
             <li class="navigation_item">
-              <a class="navigation_link" href="#"><span class="visually_hidden">Поиск</span></a>
+              <a class="navigation_link" href="#">
+                <svg aria-hidden="true" focusable="false" fill="currentColor"  width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/>
+                </svg>
+                <span class="visually_hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation_item">
-              <a class="navigation_link" href="#"><span class="visually_hidden">Понравилось</span></a>
+              <a class="navigation_link" href="#">
+                <svg aria-hidden="true" focusable="false" fill="currentColor" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                </svg>
+                <span class="favorites_number">12</span>
+                <span class="visually_hidden">Избранное</span>
+                
+              </a>
             </li>
             <li class="navigation_item">
-              <a class="button_small button_main" href="#">Хочу сюда!</a>
+              <a class="button_small button_dark" href="#">Хочу сюда!</a>
             </li>
           </ul> 
         </nav>       
@@ -40,15 +52,18 @@
       <main class="main_container main_index">
         <section class="hero">
           <div class="hero_image">
-            <img class="hero_welcome_image" src="images/welcome.svg" alt="Надпись добро пожаловать в Седону" width="458" height="352">
+            <div class="hero_content">
+              <img class="hero_welcome_image" src="images/welcome.svg" alt="Надпись добро пожаловать в Седону" width="458" height="352">
+            </div>
           </div>
           <h1 class="visually_hidden">Сайт города Седона</h1>
         </section>
         <section class="advantages">
-          <h2 class="visually_hidden">Преимущества</h2>
-          <p class="advantages_attention">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</p>
+            <div class="advantages_wrapper">
+              <h2 class="visually_hidden">Преимущества</h2>
+          <p class="advantages_attention">Седона — небольшой городок в Аризоне,<span>заслуживающий большего!</span></p>
           <p class="advantages_invitation">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            </div>
           <ul class="advantages_list">
             <li class="advantages_item">
               <div class="advantages_description_wrap">
@@ -80,11 +95,11 @@
               <h3 class="advantages_title">Жильё</h3>
               <p class="advantages_description">Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
             </li>
-            <li class="advantages_item">
+            <li class="advantages_item advantages_with_icons">
               <h3 class="advantages_title">Еда</h3>
               <p class="advantages_description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь</p>
             </li>
-            <li class="advantages_item">
+            <li class="advantages_item advantages_with_icons">
               <h3 class="advantages_title">Сувениры</h3>
               <p class="advantages_description">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -94,7 +109,7 @@
           <h2 class="visually_hidden">Поиск гостиниц</h2>
           <p class="search_hotels_title">Заинтересовались?</p>
           <p class="search_hotels_description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button_big button_search_hotels" href="#">поиск гостиницы в Cедоне</a>
+          <a class="button_big button_dark" href="#">поиск гостиницы в Cедоне</a>
         </div> 
         <section class="newsletters">
          <div class="newsletters_wrapper">
@@ -102,7 +117,7 @@
           <p class="newsletters_description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletters_form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="newsletters_email" type="email" name="email" placeholder="Ваш e-mail" required>
-            <button class="button_big button_subscribe" type="submit" name="submit">Подписаться</button>
+            <button class="button_big button_light" type="submit" name="submit">Подписаться</button>
           </form>
          </div>
         </section>
@@ -111,25 +126,35 @@
         <div class="footer_container">
           <ul class="footer_social_list">
             <li class="footer_social_item">
-              <a сlass="social_link" href="https://vk.com/htmlacademy">
+              <a class="social_link vkontakte_link" href="https://vk.com/htmlacademy"> 
+                <svg aria-hidden="true" focusable="false" width="25" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.1 1.8c.2-.5 0-1-.8-1h-2.6c-.7 0-1 .4-1.1.8 0 0-1.4 3.2-3.3 5.3-.6.6-.9.8-1.2.8-.2 0-.4-.2-.4-.8V1.8c0-.7-.2-1-.8-1h-4c-.5 0-.8.4-.8.6 0 .7 1 .8 1 2.6v3.8c0 .8 0 1-.4 1-.9 0-3-3.3-4.3-7-.3-.7-.5-1-1.2-1H1.6c-.8 0-1 .4-1 .8 0 .7 1 4 4.2 8.5C7 13.2 10 15 12.8 15c1.7 0 1.9-.4 1.9-1v-2.4c0-.7.2-.8.7-.8.4 0 1 .1 2.6 1.6 1.8 1.8 2 2.6 3 2.6h2.7c.7 0 1.1-.4 1-1.1-.3-.8-1.2-1.8-2.3-3-.6-.8-1.5-1.5-1.8-2-.4-.4-.3-.6 0-1 0 0 3.2-4.5 3.5-6Z" /></svg>
                 <span class="visually_hidden">Vkontakte</span>
               </a>
             </li>
             <li class="footer_social_item">
-                  <a сlass="social_link" href="https://t.me/htmlacademy">
+                  <a class="social_link telegram_link" href="https://t.me/htmlacademy"> 
+                    <svg aria-hidden="true" focusable="false" width="18" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.8 1 .8 7c-1 .4-1 1-.2 1.3l4.1 1.3 9.5-6c.5-.3.9-.1.5.2l-7.6 7-.3 4.1c.4 0 .6-.2.8-.4l2-2 4.1 3.1c.8.5 1.3.3 1.5-.7L18 2.2c.3-1-.4-1.6-1.1-1.2Z" /></svg> 
                     <span class="visually_hidden">Telegram</span>
                   </a>
             </li>
             <li class="footer_social_item">
-                  <a сlass="social_link" href="https://www.youtube.com/user/htmlacademyru">
+                  <a class="social_link youtube_link" href="https://www.youtube.com/user/htmlacademyru">
+                    <svg aria-hidden="true" focusable="false" width="23" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 .4H3.4C1.6.4.3 2 .3 3.8v10c0 2 1.3 3.6 3.2 3.6h15.7c1.6 0 3.1-1.6 3.1-3.4V3.8C22.1 2 20.8.4 19 .4ZM8 12.9v-8l7.3 4-7.3 4Z"/></svg>
                     <span class="visually_hidden">Youtube</span>
                   </a>
-            </li>
-          </ul>   
-          <a class="phone_number"  href="tel:+78128121212">+7 (812) 812-12-12</a> 
-          <a class="htmlacademy_link" href="https://htmlacademy.ru/">
-            <img class="htmlacademy_image" src="images/logo_htmlacademy.svg" alt="логотип html академии" width="115" height="33">
-          </a>     
+                </li>
+          </ul> 
+          <p class="contacts">
+            <a class="footer_link phone_number"  href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </p>   
+          <p class="partners">
+            <a class="footer_link htmlacademy_link" href="https://htmlacademy.ru/">
+            <svg aria-hidden="true" focusable="false" width="115" height="34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#a)"><path d="M0 13.3v2.6h2.5v-2.6H0ZM11.6 4.9c-1.6 0-2.8.7-3.6 1.7h-.1V.4h-2v15.5h2v-5.3C7.9 8.5 9.2 7 11.2 7c1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.8c.1-3-1.8-5-4.5-5ZM26.6 5.2h-4.8V1.5h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.2h4.8v-2ZM41.1 5c-1.6 0-2.9.8-3.5 2h-.1a3.7 3.7 0 0 0-3.4-2c-1.4 0-2.5.8-3.1 1.8h-.1V5.2H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V9.3c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13c0 1.8 1 2.8 2.8 2.8h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.4h-2V13ZM28.9 20a4.9 4.9 0 0 0-3.9-1.7c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-2h.1v1.7h2V18.6h-2V20Zm-3.6 7.5a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.4c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20a4.9 4.9 0 0 0-3.9-1.7c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-2h.1v1.7h2V18.6h-2V20Zm-3.6 7.5a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.2a5 5 0 0 0-3.9-2c-3.1 0-5.4 2.4-5.4 5.7 0 3.3 2.2 5.6 5.4 5.6 1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.8h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.3a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-3h8.8c.2-3.5-2-6.2-5.5-6.2Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 18.3a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.4l-3.6-9h-2.2l4.8 11.7c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+              </g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .4)" d="M0 0h115v33H0z"/></clipPath></defs></svg>
+              <span class="visually_hidden">логотип html академии</span>
+            </a>
+        </p>     
         </div>
       </footer>
     </div>
