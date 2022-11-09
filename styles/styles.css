@@ -304,7 +304,7 @@ body {
      left: 50%;
      transform: translateX(-38px);
      background-image: url("../images/advantages/food.svg");
-     height: 72px;
+     height: 70px;
      width: 75px;
      content: "";
  }
@@ -317,8 +317,8 @@ body {
      left: 50%;
      transform: translateX(-38px);
      background-image: url("../images/advantages/gift.svg");
-     height: 72px;
-     width: 75px;
+     height: 76px;
+     width: 64px;
      content: "";
  }
 
@@ -403,6 +403,13 @@ body {
     font-size: 22px;
     line-height: 26px; 
 }
+.newsletters_email {
+    font: inherit;
+    padding-left: 20px;
+}
+.newsletters_email::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
 .newsletters_inner>.newsletters_description {
     color: #333333;
 }
@@ -412,6 +419,23 @@ body {
     width: 684px;
     box-sizing: border-box;
     margin: 0 auto;
+}
+.newsletters_email:hover {
+    border: 2px solid #68A2CA;
+}
+.newsletters_email:focus {
+    outline: none;
+    border: 2px solid #68A2CA;
+}
+.newsletters_email:focus-visible {
+    outline: none;
+    border: 2px solid #68A2CA;
+}
+.newsletters_email:active {
+    border: 2px solid #3F5E72;
+}
+.newsletters_email:disabled {
+    border: 2px solid rgba(0, 0, 0, 0.3);   
 }
 .newsletters_form .button_light {
     border-radius: 0px 4px 4px 0px;
@@ -611,13 +635,169 @@ body {
     line-height: 24px;
     margin-bottom: 32px;
 }
+.hotel_filter_item {
+    margin-bottom: 16px;;
+}
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+.control_mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 1px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
 .control_input {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 16px;
 }
+.control_input[type="checkbox"]:checked + .control_mark::before {
+    position: absolute;
+    width: 12px;
+    height: 10px;
+    left: 4px;
+    top: 5px;
+    background-image: url(../images/check.svg);
+    content: "";
+}
+.control_input[type="radio"] +.control_mark {
+    border-radius: 50%;
+}
+.control_input[type="radio"]:checked + .control_mark::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3F5E72;
+    left: 5px;
+    top: 5px;
+    content: "";
+}
+.control:hover .control_mark {
+    opacity: 0.6;
+}
+.control_input:focus + .control_mark, 
+.control_input:focus-visible + .control_mark {
+    outline: 3px solid #83B3D3;
+}
+.control_input:active +.control_mark {
+    opacity: 0.3;
+}
+.control_input:disabled + .control_mark {
+    opacity: 0.3;
+}
+.range_wrapper_inputs {
+    position: relative;
+    display: grid;
+    height: 48px;
+    grid-template-columns: 143px 143px;
+    column-gap: 2px;
+    margin-bottom: 36px;
+}
+.range_input {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 20px;
+    border: none;
+    background: #F2F2F2;
+    appearance: textfield;
+}
+.range_input::-webkit-outer-spin-button,
+.range_input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.range_wrapper_inputs::after {
+    position: absolute;
+    color: #000000;
+    left: 106px;
+    top: 12px;
+    opacity: 0.6;
+    content: "от";
+}
+.range_wrapper_inputs::before {
+    position: absolute;
+    color: #000000;
+    left: 248px;
+    top: 12px;
+    opacity: 0.6;
+    content: "до";
+}
+.range_input:hover {
+    outline: 2px solid #68A2CA;
+}
+.range_input:focus, 
+.range_input:focus-visible {
+    
+    outline: 2px solid #68A2CA;
+}
+.range_input:active {
+    outline: 2px solid #3F5E72;
+}
+.range_input:disabled {
+    color: rgba(0, 0, 0, 0.3); 
+    outline: none;  
+}
+
+.price_min {
+    border-radius:4px 0 0 4px;
+}
+.price_max {
+    border-radius: 0 4px 4px 0;
+}
+
+.range_bar_scale {
+    position: relative;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.range_bar {
+    position: absolute; 
+    top: 0px;
+    height: 4px;
+    background-color:  #FFFFFF;
+}
+.range_toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+}
+
+.toggle_min {
+    top: -8px;
+}
+.toggle_max {
+    top: -8px;
+    left: 217px;
+}
+.range_toggle:hover {
+    background: #E6E6E6;
+}
+.range_toggle:focus, 
+.range_toggle:focus-visible {
+    outline: 3px solid #83B3D3;
+}
+.range_toggle:active {
+    background: #E6E6E6;
+}
+.range_toggle:disabled {
+    opacity: 0.3;
+}
 .button_container {
     width: 191px;
+}
+.button_container {
+    padding-top: 56px;
 }
 .submit_button {
     padding-left: 50px;
