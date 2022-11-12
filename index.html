@@ -157,6 +157,64 @@
         </p>     
         </div>
       </footer>
+      <div class="modal_container modal_container">
+        <div class="modal modal_search_hotel ">
+          <button class="modal_close_button">
+            <svg class="close_icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 1.8 13.2.5 7.5 6.2 1.8.5.5 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/></svg>
+            <span class="visually_hidden">Закрыть</span>
+          </button>
+          <section class="modal_content">
+            <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
+            <form class="modal_search_form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="data_entrance" for="entrance">Дата Заезда:</label>
+              <div class="wrap_input_data show_warning">
+                <input class="form_field_entrance" id="entrance" type="text" placeholder="Укажите дату">
+                <span class="entrance_warning">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              
+              <label class="data_exit" for="exit">Дата выезда:</label>
+              <div class="wrap_input_data show_help_info">
+                <input class="form_field_exit" id="exit" type="text" placeholder="Укажите дату">
+                <span class="help_info">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+              
+              <label class="adults" for="adults_number">Взрослые:</label>
+              <div class="wrapper_adults_number">
+                <button class="minus" type="button">
+                  <svg class="icon_minus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
+                  <span class="visually_hidden">Удалить</span>
+                </button>
+                <input class="adults_number" id="adults_number" type="number" value="2">
+                <button class="plus" type="button">
+                  <svg class="icon_plus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" /></svg>
+                  <span class="visually_hidden">Добавить</span>
+                </button>
+              </div>
+              <label class="childs" for="childs_number">
+                <span class="info_childs">Дети:</span>
+                <span class="tooltip">
+                  <button class="tooltip_toggle" type="button" aria-labelledby="tooltip_label_date">
+                    <svg class="tooltip_icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/></svg>
+                  </button>
+                  <span class="tooltip_text" role="tooltip" id="tooltip_label_date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </label>
+              <div class="wrapper_childs_number">
+                <button class="minus" type="button">
+                  <svg class="icon_minus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
+                  <span class="visually_hidden">Удалить</span>
+                </button>
+                <input class="childs_number" id="childs_number" type="number" value="2">
+                <button class="plus" type="button">
+                  <svg class="icon_plus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" /></svg>
+                  <span class="visually_hidden">Добавить</span>
+                </button>
+              </div>
+              <button class="button_big button_light modal_search_button" type="submit" value="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
