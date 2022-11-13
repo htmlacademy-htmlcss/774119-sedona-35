@@ -404,10 +404,18 @@ body {
     line-height: 26px; 
 }
 .newsletters_email {
-    font: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
     padding-left: 20px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    background-color: #F2F2F2;
 }
 .newsletters_email::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
     color: rgba(0, 0, 0, 0.6);
 }
 .newsletters_inner>.newsletters_description {
@@ -635,6 +643,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     content: "";
+    pointer-events: none;
     opacity: 0.3;
 }
 .entrance_warning,

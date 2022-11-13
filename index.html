@@ -165,16 +165,16 @@
           </button>
           <section class="modal_content">
             <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
-            <form class="modal_search_form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="modal_search_form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="data_entrance" for="entrance">Дата Заезда:</label>
               <div class="wrap_input_data show_warning">
-                <input class="form_field_entrance" id="entrance" type="text" placeholder="Укажите дату">
+                <input class="form_field_entrance" id="entrance" type="text" name="entrance_date" placeholder="Укажите дату" >
                 <span class="entrance_warning">Мы не можем отправить вас в прошлое.</span>
               </div>
               
               <label class="data_exit" for="exit">Дата выезда:</label>
               <div class="wrap_input_data show_help_info">
-                <input class="form_field_exit" id="exit" type="text" placeholder="Укажите дату">
+                <input class="form_field_exit" id="exit" type="text" name="exit_date" placeholder="Укажите дату">
                 <span class="help_info">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               
@@ -184,7 +184,7 @@
                   <svg class="icon_minus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
                   <span class="visually_hidden">Удалить</span>
                 </button>
-                <input class="adults_number" id="adults_number" type="number" value="2">
+                <input class="adults_number" id="adults_number" type="number" name="adults_number" value="2">
                 <button class="plus" type="button">
                   <svg class="icon_plus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" /></svg>
                   <span class="visually_hidden">Добавить</span>
@@ -204,7 +204,7 @@
                   <svg class="icon_minus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z"/></svg>
                   <span class="visually_hidden">Удалить</span>
                 </button>
-                <input class="childs_number" id="childs_number" type="number" value="2">
+                <input class="childs_number" id="childs_number" type="number" name="childs_number" value="2">
                 <button class="plus" type="button">
                   <svg class="icon_plus" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" /></svg>
                   <span class="visually_hidden">Добавить</span>
