@@ -7,8 +7,7 @@
   </head>
   <body>
     <div class="page_container">
-      <header class="pages_header">
-        
+      <header class="pages_header">     
         <nav class="navigation">
           <a  class="index_link" href="index.html" aria-current="page">
             <img class="header_logo" src="images/logo.svg" alt="логотип города Седона" width="140" height="70">
@@ -87,28 +86,28 @@
             <li class="advantages_item">
               <img class="advantages_image" src="images/advantages/advantages_photo_2.jpg" alt="Естественный скальный мост над ущельем" width="800" height="384">
               <div class="advantages_description_wrap">
-                <h3 class="advantages_title">Там есть мост дьявола</h3>
+                <h3 class="advantages_title">Там есть <span>мост дьявола</span></h3>
                 <p class="advantages_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>      
             </li>
             <li class="advantages_item advantages_with_icons">
               <h3 class="advantages_title">Жильё</h3>
-              <p class="advantages_description">Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
+              <p class="advantages_description">Рекомендуем пожить <span>в настоящем мотеле,</span> всё как в кино</p>
             </li>
             <li class="advantages_item advantages_with_icons">
               <h3 class="advantages_title">Еда</h3>
-              <p class="advantages_description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь</p>
+              <p class="advantages_description">Всегда заказывайте <span>топовый фирменный бургер,</span> вы не разочаруетесь</p>
             </li>
             <li class="advantages_item advantages_with_icons">
               <h3 class="advantages_title">Сувениры</h3>
-              <p class="advantages_description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="advantages_description">Не только китайского, <span>но и настоящего местного</span> производства!</p>
             </li>
           </ul>
         </section>
         <div class="search_hotels">
           <h2 class="visually_hidden">Поиск гостиниц</h2>
           <p class="search_hotels_title">Заинтересовались?</p>
-          <p class="search_hotels_description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="search_hotels_description">Укажите предполагаемые даты поездки,<span>и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
           <a class="button_big button_dark" href="#">поиск гостиницы в Cедоне</a>
         </div> 
         <section class="newsletters">
@@ -157,8 +156,8 @@
         </p>     
         </div>
       </footer>
-      <div class="modal_container modal_container">
-        <div class="modal modal_search_hotel ">
+      <div class="modal_container">
+        <div class="modal modal_search_hotel">
           <button class="modal_close_button">
             <svg class="close_icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 1.8 13.2.5 7.5 6.2 1.8.5.5 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/></svg>
             <span class="visually_hidden">Закрыть</span>
@@ -168,16 +167,14 @@
             <form class="modal_search_form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="data_entrance" for="entrance">Дата Заезда:</label>
               <div class="wrap_input_data show_warning">
-                <input class="form_field_entrance" id="entrance" type="text" name="entrance_date" placeholder="Укажите дату" >
+                <input class="form_field_entrance" id="entrance" type="text" name="entrance_date" placeholder="Укажите дату" value="27 апреля 2020">
                 <span class="entrance_warning">Мы не можем отправить вас в прошлое.</span>
               </div>
-              
-              <label class="data_exit" for="exit">Дата выезда:</label>
+              <label class="data_exit" for="exit">Дата Выезда:</label>
               <div class="wrap_input_data show_help_info">
-                <input class="form_field_exit" id="exit" type="text" name="exit_date" placeholder="Укажите дату">
+                <input class="form_field_exit" id="exit" type="text" name="exit_date" placeholder="Укажите дату" value="1 сентября 2023">
                 <span class="help_info">На эти даты есть свободные номера. Пока есть.</span>
               </div>
-              
               <label class="adults" for="adults_number">Взрослые:</label>
               <div class="wrapper_adults_number">
                 <button class="minus" type="button">
