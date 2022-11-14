@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="page_container">
@@ -167,12 +168,12 @@
             <form class="modal_search_form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="data_entrance" for="entrance">Дата Заезда:</label>
               <div class="wrap_input_data show_warning">
-                <input class="form_field_entrance" id="entrance" type="text" name="entrance_date" placeholder="Укажите дату" value="27 апреля 2020">
+                <input class="form_field_entrance" id="entrance" type="text" name="entrance_date" placeholder="Укажите дату" value="27 апреля 2020" required>
                 <span class="entrance_warning">Мы не можем отправить вас в прошлое.</span>
               </div>
               <label class="data_exit" for="exit">Дата Выезда:</label>
               <div class="wrap_input_data show_help_info">
-                <input class="form_field_exit" id="exit" type="text" name="exit_date" placeholder="Укажите дату" value="1 сентября 2023">
+                <input class="form_field_exit" id="exit" type="text" name="exit_date" placeholder="Укажите дату" value="1 сентября 2023" required>
                 <span class="help_info">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <label class="adults" for="adults_number">Взрослые:</label>
