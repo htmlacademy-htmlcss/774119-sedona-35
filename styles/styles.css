@@ -389,7 +389,7 @@ body {
 
  .advantages_item:nth-child(6) .advantages_title::before {
      position: absolute;
-     bottom: 58px;
+     top: -102px;
      left: 50%;
      transform: translateX(-38px);
      height: 72px;
@@ -405,7 +405,7 @@ body {
 
  .advantages_item:nth-child(7) .advantages_title::before {
      position: absolute;
-     bottom: 58px;
+     top: -102px;
      left: 50%;
      transform: translateX(-38px);
      height: 70px;
@@ -421,7 +421,7 @@ body {
 
  .advantages_item:nth-child(8) .advantages_title::before {
      position: absolute;
-     bottom: 58px;
+     top: -104px;
      left: 50%;
      transform: translateX(-32px);
      height: 76px;
