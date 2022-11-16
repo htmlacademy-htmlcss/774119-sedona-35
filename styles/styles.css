@@ -1046,7 +1046,7 @@ body {
 .filters {
     width: 1200px;
     box-sizing: border-box;
-    padding: 35px 70px 42px;
+    padding: 35px 70px 44px;
     color: #FFFFFF;
     background-image: url("../images/catalog_background.jpg");
     background-size: cover;
@@ -1100,17 +1100,23 @@ body {
 .hotel_filter {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .filter_group_list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: auto;
+}
+
+.hotel_filter_group:first-child {
+    margin-right: 70px;
 }
 
 .filter_group_price {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 70px;
 }
 
 .hotel_filter_group {
@@ -1240,6 +1246,7 @@ body {
     color: #000000;
     opacity: 0.6;
     content: "от";
+    pointer-events: none;
 }
 
 .range_wrapper_inputs::before {
@@ -1249,6 +1256,7 @@ body {
     color: #000000;
     opacity: 0.6;
     content: "до";
+    pointer-events: none;
 }
 
 .range_input:hover {
