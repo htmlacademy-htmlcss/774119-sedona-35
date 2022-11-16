@@ -314,7 +314,7 @@ body {
     text-transform: uppercase;
 }
 
-.advantages_item:not(.advantages_with_icons) .advantages_title::after {
+.advantages_item .advantages_title::after {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -322,12 +322,15 @@ body {
     width: 60px;
     height: 2px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     content: "";
 }
 
-.advantages_item .advantages_title::after {
-    background-color: rgba(0, 0, 0, 0.3);
+.advantages_description_wrap .advantages_title::after {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.advantages_with_icons .advantages_title::after {
+    background: none;
 }
 
 .advantages_description {
