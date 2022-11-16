@@ -38,7 +38,7 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
   .button_small {
     display: block;
     padding: 8px 34px;
@@ -66,7 +66,7 @@ body {
     text-decoration: none;
     text-align: center;
     color: #FFFFFF;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 4px;
 }
 
@@ -133,6 +133,8 @@ body {
     margin: 0 auto;
     text-align: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    
 }
 
 .navigation {
@@ -329,6 +331,7 @@ body {
 .advantages_description_wrap .advantages_title::after {
     background-color: rgba(255, 255, 255, 0.3);
 }
+
 .advantages_with_icons .advantages_title::after {
     background: none;
 }
@@ -389,7 +392,7 @@ body {
 
  .advantages_item:nth-child(6) .advantages_title::before {
      position: absolute;
-     top: -102px;
+    top: -102px;
      left: 50%;
      transform: translateX(-38px);
      height: 72px;
@@ -522,7 +525,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
     border: none;
     background-color: #F2F2F2;
 }
@@ -1044,6 +1047,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color:  #FFFFFF;
 }  
 
 .filters {
@@ -1296,7 +1300,7 @@ body {
 
 .range_bar {
     position: absolute; 
-    top: 0px;
+    top: 0;
     height: 4px;
     background-color:  #FFFFFF;
 }
