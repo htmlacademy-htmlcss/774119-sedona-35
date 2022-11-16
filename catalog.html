@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 <body>
     <div class="catalog_container">
       <header class="pages_header">
         <nav class="navigation">
-          <a  class="index_link" href="index.html" aria-current="page">
+          <a  class="index_link" href="index.html">
             <img class="header_logo" src="images/logo.svg" alt="логотип города Седона" width="140" height="70">
           </a>
           <ul class="navigation_list">
             <li class="navigation_item ">
-              <a class="navigation_link active_link" href="index.html">Главная</a>
+              <a class="navigation_link" href="index.html">Главная</a>
             </li>
             <li class="navigation_item">
               <a class="navigation_link" href="#">О Седоне</a>
@@ -65,7 +66,7 @@
                     </a>
                 </li>
                 <li class="breadcrumbs_link">
-                  <svg aria-hidden="true" focusable="false" width="8" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="8" height="10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 5 2.1.7C1.9.5 1.4.5 1 .7c-.3.3-.2.8 0 1l4.2 3.8-4 3.7c-.3.3-.3.8 0 1 0 .1.3.3.5.3l.5-.3L6.9 6c.4-.3.4-.8 0-1Z" fill="#fff"/>
                   </svg>
                 </li>
@@ -79,7 +80,7 @@
             <form class="hotel_filter"  action="https://echo.htmlacademy.ru/" method="get">
               <div class="filter_group_list">
                 <fieldset class="hotel_filter_group">
-                    <legend class="hotel_filter_title">Инфраструктура:</legend>
+                  <legend class="hotel_filter_title">Инфраструктура:</legend>
                   <ul class="hotel_filter_list">
                     <li class="hotel_filter_item">
                       <label class="control">
@@ -90,7 +91,7 @@
                     </li>
                     <li class="hotel_filter_item">
                       <label class="control">
-                        <input class="visually_hidden control_input"  type="checkbox" name="swimming_pool">
+                        <input class="visually_hidden control_input"  type="checkbox" name="swimming_pool" checked>
                         <span class="control_mark"></span>
                         <span class="control_label">Парковка</span> 
                       </label>
@@ -105,7 +106,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="hotel_filter_group">
-                    <legend class="hotel_filter_title">Тип жилья:</legend>
+                  <legend class="hotel_filter_title">Тип Жилья:</legend>
                   <ul class="hotel_filter_list">
                     <li class="hotel_filter_item">
                       <label class="control">
@@ -169,7 +170,7 @@
               </select>
             </div>
             <div class="wrap_view">
-              <a class="hotel_view"  href="#">
+              <a class="hotel_view active_view"  href="#">
                 <svg aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
                 </svg>
@@ -211,7 +212,7 @@
               <p class="rate"><span>Гостиница</span><span class="rate_price">От 5000 ₽</span></p>
               <p class="card_buttons">
                 <a  class="button_small button_more button_dark" href="#">подробнее</a>
-                <button class="button_small to_favorites button_light">в избранное</button>
+                <button class="button_small added_favorites button_light">в избранном</button>
               </p>
               <p class="rate_star four_stars"><span class="visually_hidden">4 звезды</span></p>
               <p class="rate_value">Рейтинг: <span class="rate_number">9,2</span></p>
@@ -263,7 +264,7 @@
               <a class="pagination_link" href="#"><span>10</span></a>
             </li>
           </ol>
-        <secction/>
+        </section>
         <section class="newsletters">
           <div class="newsletters_wrapper newsletters_inner">
             <h2 class="newsletters_title">Подпишитесь на рассылку</h2>
