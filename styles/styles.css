@@ -43,7 +43,7 @@ body {
     display: block;
     padding: 8px 34px;
     margin: 0;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -58,7 +58,7 @@ body {
 .button_big {
     display: inline-block;
     padding: 8px 50px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -382,55 +382,41 @@ body {
 }
 
 .advantages_with_icons {
-    padding-top: 182px;
+    padding-top: 75px;
 }
 
-.advantages_item:nth-child(6) .advantages_title {
-    position: relative;
+.advantages_item:nth-child(6)::before {
+    display: block;
+    height: 72px;
+    width: 75px;
+    margin: 5px auto;
     margin-bottom: 30px;
- }
+    background-image: url("../images/advantages/house.svg");
+    content: "";
+}
 
- .advantages_item:nth-child(6) .advantages_title::before {
-     position: absolute;
-    top: -102px;
-     left: 50%;
-     transform: translateX(-38px);
-     height: 72px;
-     width: 75px;
-     background-image: url("../images/advantages/house.svg");
-     content: "";
- }
+.advantages_item:nth-child(7)::before {
+    display: block;
+    height: 70px;
+    width: 75px;
+    margin: 5px auto;
+    margin-bottom: 32px;
+    background-image: url("../images/advantages/food.svg");
+    content: "";
+}
 
-.advantages_item:nth-child(7) .advantages_title {
-    position: relative;
+.advantages_item:nth-child(8)::before {
+    display: block;
+    height: 76px;
+    width: 64px;
+    margin: 3px auto;
+    margin-bottom: 27px;
+    background-image: url("../images/advantages/gift.svg");
+    content: "";
+}
+
+.advantages_with_icons .advantages_title {
     margin-bottom: 30px;
- }
-
- .advantages_item:nth-child(7) .advantages_title::before {
-     position: absolute;
-     top: -102px;
-     left: 50%;
-     transform: translateX(-38px);
-     height: 70px;
-     width: 75px;
-     background-image: url("../images/advantages/food.svg");
-     content: "";
- }
-
- .advantages_item:nth-child(8) .advantages_title {
-    position: relative;
-    margin-bottom: 30px;
- }
-
- .advantages_item:nth-child(8) .advantages_title::before {
-     position: absolute;
-     top: -104px;
-     left: 50%;
-     transform: translateX(-32px);
-     height: 76px;
-     width: 64px;
-     background-image: url("../images/advantages/gift.svg");
-     content: "";
  }
 
 .advantages_only_text {
@@ -447,10 +433,6 @@ body {
     margin-bottom: 81px;
     padding-left: 70px;
     padding-right: 70px;
-}
-
-.advantages_icon {
-    margin-bottom: 30px;
 }
 
 .search_hotels {
@@ -1407,7 +1389,7 @@ body {
 
 .select_control {
     padding-left: 20px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
